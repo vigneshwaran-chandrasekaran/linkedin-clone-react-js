@@ -1,13 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import { ThemeProvider, createGlobalStyle } from 'styled-components';
+import reset from 'styled-reset';
 import App from './App';
+import { theme } from 'styles/theme';
 import reportWebVitals from './reportWebVitals';
+
+const GlobalStyle = createGlobalStyle`
+	${reset}
+	html {
+		margin: 0;
+		font-family: 'Source Sans Pro', sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+	body {
+    margin: 0 auto;
+	width: 100%;
+	min-height: 100vh;
+	}
+`;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<React.StrictMode>
-		<App />
+		<ThemeProvider theme={theme}>
+			<GlobalStyle />
+
+			<App />
+		</ThemeProvider>
 	</React.StrictMode>
 );
 
