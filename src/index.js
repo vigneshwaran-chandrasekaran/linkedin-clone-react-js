@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
-import App from './App';
+import { Router } from 'routes';
 import { theme } from 'styles/theme';
 import reportWebVitals from './reportWebVitals';
 
@@ -18,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0 auto;
 	width: 100%;
 	min-height: 100vh;
+	background-color: #f3f2ef;
 	}
 `;
 
@@ -26,8 +27,7 @@ root.render(
 	<React.StrictMode>
 		<ThemeProvider theme={theme}>
 			<GlobalStyle />
-
-			<App />
+			<Router />
 		</ThemeProvider>
 	</React.StrictMode>
 );
