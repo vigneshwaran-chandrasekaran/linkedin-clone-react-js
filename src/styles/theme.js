@@ -7,6 +7,7 @@ export const theme = {
 		text: 'black',
 		white: '#fff',
 		isabelline: '#f3f2ef',
+		brown: '#915907',
 	},
 	fontSize: {
 		xl: '2.4rem',

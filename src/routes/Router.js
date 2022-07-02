@@ -7,7 +7,7 @@ export default function Router() {
 	return (
 		<BrowserRouter>
 			<Header />
-			<div style={{ paddingTop: '300px' }}>
+			<div style={{ paddingTop: '60px' }}>
 				<Routes>
 					<Route path="/">
 						<Route index element={<Pages.Home />} />

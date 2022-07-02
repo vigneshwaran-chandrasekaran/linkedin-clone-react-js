@@ -5,10 +5,10 @@ const Image = styled.img.attrs((props) => ({
 }))`
 	height: auto;
 	border-radius: 8px;
-	${(props) =>
-		props.width !== undefined &&
+	${({ width }) =>
+		width &&
 		css`
-			width: props.width;
+			width: ${width};
 		`}
 	${(props) =>
 		props.circle !== undefined &&
