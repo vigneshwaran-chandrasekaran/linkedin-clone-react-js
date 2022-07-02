@@ -10,8 +10,8 @@ const Image = styled.img.attrs((props) => ({
 		css`
 			width: ${width};
 		`}
-	${(props) =>
-		props.circle !== undefined &&
+	${({ circle }) =>
+		circle &&
 		css`
 			border-radius: 50%;
 		`}

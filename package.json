@@ -18,6 +18,7 @@
     "redux": "^4.2.0",
     "styled-components": "^5.3.5",
     "styled-reset": "^4.4.1",
+    "styled-system": "^5.1.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
