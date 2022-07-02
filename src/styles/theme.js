@@ -5,6 +5,8 @@ export const theme = {
 		primary: '#0a66c2',
 		secondary: 'teal',
 		text: 'black',
+		white: '#fff',
+		isabelline: '#f3f2ef',
 	},
 	fontSize: {
 		xl: '2.4rem',
