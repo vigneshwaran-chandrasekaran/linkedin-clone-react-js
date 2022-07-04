@@ -4,7 +4,6 @@ const Image = styled.img.attrs((props) => ({
 	src: props.src,
 }))`
 	height: auto;
-	border-radius: 8px;
 	${({ width }) =>
 		width &&
 		css`

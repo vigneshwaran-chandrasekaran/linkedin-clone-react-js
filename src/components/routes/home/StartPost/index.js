@@ -16,7 +16,7 @@ const types = [
 
 export default function StartPost() {
 	return (
-		<Box m="0.5rem 1rem" p="1rem" pb="0">
+		<Box m="0 1rem 0.5rem 1rem" p="1rem" pb="0">
 			<Search>
 				<Image width={48} height={48} circle src={profile} />
 				<SearchBox>
