@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { News, StartPost, Links, Copyright } from 'components/routes/home';
+import { News, StartPost, Links, Copyright, Profile } from 'components/routes/home';
 import { Flex } from 'components/atoms';
 
 const Container = styled.div`
@@ -12,7 +12,7 @@ const Container = styled.div`
 export default function Home() {
 	return (
 		<Container>
-			<News />
+			<Profile />
 			<StartPost />
 			<Flex flexDirection="column" alignItems="center">
 				<News />
