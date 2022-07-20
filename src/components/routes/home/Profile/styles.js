@@ -23,4 +23,29 @@ const Designation = styled.div`
 	padding-top: 0.4rem;
 `;
 
-export { Name, Designation };
+const Views = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	cursor: pointer;
+	padding: 0.3rem 1.2rem;
+
+	&:hover {
+		background-color: rgba(0, 0, 0, 0.08);
+	}
+`;
+
+const ViewTitle = styled.div`
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 12px;
+	font-weight: 700;
+`;
+
+const ViewCount = styled.div`
+	color: ${(props) => props.theme.colors.primary};
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: 700;
+`;
+
+export { Name, Designation, Views, ViewTitle, ViewCount };
